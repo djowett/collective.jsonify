@@ -17,7 +17,7 @@ class Wrapper(dict):
         self.portal_path = '/'.join(self.portal.getPhysicalPath())
         self.portal_utils = getToolByName(self.context, 'plone_utils')
         self.charset = self.portal.portal_properties.site_properties.default_charset
-        if not self.charset: # newer seen it missing ... but users can change it
+        if not self.charset: # never seen it missing ... but users can change it
             self.charset = 'utf-8'
 
         for method in dir(self):
@@ -342,7 +342,9 @@ class Wrapper(dict):
             return
 
         import base64
-        fields = self.context.schema.fields()
+        #fields = self.context.schema.fields()
+        ## Getting fields like this, additionally picks up 'image' in ATBlobs
+        fields = self.context.Schema().fields() 
         for field in fields:
             fieldname = unicode(field.__name__)
             type_ = field.__class__.__name__
@@ -388,7 +390,8 @@ class Wrapper(dict):
                 if value:
                     self[unicode(fieldname)] = value
 
-            elif type_ in ['ImageField', 'FileField', 'AttachmentField']:
+            elif type_ in ['ImageField', 'FileField', 'AttachmentField',
+                           'ExtensionBlobField']:
                 fieldname = unicode('_datafield_'+fieldname)
                 value = field.get(self.context)
                 value2 = value
