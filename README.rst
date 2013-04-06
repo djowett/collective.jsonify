@@ -1,4 +1,3 @@
-
 The main reason for this package lies in the complicated dependencies in other products 
 which export data from Plone. Normally these only work with Plone 3.0 or higher (or not
 even with 3.0).
@@ -22,7 +21,7 @@ Package is DOCUMENTED_.
 .. _`collective.transmogrifier`: http://github.com/collective/collective.jsonmigrator
 .. _`simplejson`: http://pypi.python.org/simplejson
 .. _`TESTED`: http://packages.python.org/collective.jsonify/testing.html
-.. _`DOCUMENTED`: http://packages.python.org/collective.jsonify
+.. _`DOCUMENTED`: https://readthedocs.org/builds/collectivejsonify/
 .. _`collective.jsonmigrator`: http://pypi.python.org/pypi/collective.jsonmigrator
 .. _`Rok Garbas`: http://www.garbas.si/labs/plone-migration
 .. _`JSON`: http://en.wikipedia.org/wiki/JSON
