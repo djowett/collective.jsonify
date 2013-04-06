@@ -1,6 +1,6 @@
 from setuptools import setup, find_packages
 
-version = '0.1.1b'
+version = '0.1.2b'
 
 setup(
     name='collective.jsonify',
