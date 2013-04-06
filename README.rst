@@ -18,10 +18,10 @@ Package is DOCUMENTED_.
 :Source: http://github.com/collective/collective.jsonify
 
 
-.. _`collective.transmogrifier`: http://github.com/collective/collective.jsonmigrator
+.. _`collective.transmogrifier`: http://pypi.python.org/pypi/collective.transmogrifier
 .. _`simplejson`: http://pypi.python.org/simplejson
 .. _`TESTED`: http://packages.python.org/collective.jsonify/testing.html
 .. _`DOCUMENTED`: https://readthedocs.org/builds/collectivejsonify/
-.. _`collective.jsonmigrator`: http://pypi.python.org/pypi/collective.jsonmigrator
+.. _`collective.jsonmigrator`: http://github.com/collective/collective.jsonmigrator
 .. _`Rok Garbas`: http://www.garbas.si/labs/plone-migration
 .. _`JSON`: http://en.wikipedia.org/wiki/JSON
